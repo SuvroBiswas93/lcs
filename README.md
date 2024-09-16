@@ -5,7 +5,7 @@ Limits are the following : single string length is less or equal to 256, number 
 
 ## Start Testing:
 
-```
+```bash
 node lcs.js
 
 node lcs.js ABCDEFZ WBCDXYZ
