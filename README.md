@@ -1,11 +1,11 @@
 # lcs
-You have to write a JavaScript code that prints the longest common substring of passed arguments (with trailing newline — just use console.log for output).
+a JavaScript code that prints the longest common substring of passed arguments (with trailing newline — just use console.log for output).
 
-The code will be running under Node.js and arguments will be passed via command line (it means you should not read standard input stream).
+The code will be running under Node.js and arguments will be passed via command line (it means it should not read standard input stream).
 
 If the longest common superstring is empty (no arguments are passed or arguments have no common substrings) it’s necessary to print single newline. If there are several solution print any single one of them.
 
-Limits are the following (do not use them in your solutions, these are only test restrictions): single string length is less or equal to 256, number of strings is less or equal to 64, strings contain only English letter and digits, time limit per test is 5 seconds.
+Limits are the following : single string length is less or equal to 256, number of strings is less or equal to 64, strings contain only English letter and digits, time limit per test is 5 seconds.
 
 The output should not contain any excess characters (error or debug messages, additional newlines, etc.).
 
@@ -20,8 +20,7 @@ You have to use only command-line arguments (no readline, no process.stdin, etc.
 
 When called without arguments, your script should not fail.
 
-If any test is failed your grade for this task is zero.
-Some examples (output can be different if there are several solutions; there will be much more tests):
+
 
 node lcs.js
 
@@ -43,13 +42,4 @@ node lcs.js ABCDEFGH 1234
 
 node lcs.js ABCDEFGH
 ABCDEFGH
-Notes
-If you think that test is wrong, check whitespaces in your output — for example, test cannot differentiate spaces and junk output. Problems may arise in the new bot, it's expected. But the tests themselves are very well "tested".
 
-For example, check the following arguments before submitting your solution: ABCQEFDEFGHIJ BCXEFGYZBCDEWEFGHU (e.g. there is the common EFGH substring).
-
-Also, check that your script does not fail without arguments.
-
-And one more time: the size of your code should be as small as possible.
-
-And don’t use process.exit to quit your script. Or at least don’t use non-zero error code at least!
